@@ -52,7 +52,7 @@ def shout_with_a_number(a_string, a_number):
 
     HINT: Lookup how to cast a_number to a string or lookup how to use f-strings in python
     """
-    return str.upper (a_string) + str(a_number)
+    return str.upper (a_string) + " " + str(a_number)
 
 
 def minitest(f, args, expected):

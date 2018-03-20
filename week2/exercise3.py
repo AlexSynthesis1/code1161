@@ -197,10 +197,10 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     loops_6 = []
-    for y in range(11):
+    for y in range(10):
         loops_6a = []
-        for x in range(y):
-            loops_6a.append(int(x))
+        for x in range(y+1):
+            loops_6a.append(str(x))
         loops_6.append(loops_6a)
     return loops_6
 

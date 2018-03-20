@@ -7,7 +7,10 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    pass
+    if (a_number % 2 == 0):
+        return False
+    else:
+        return True
 
 
 def fix_it(moves=True, should_move=True):
@@ -21,7 +24,12 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+    if moves==True and should_move==False:
+        return "Duct Tape"
+    elif moves==False and should_move==True:
+        return "WD-40"
+    else:
+        return "No Problem"
 
 
 def loops_1a():
@@ -31,7 +39,11 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
+    loops_1a = []
+    for x in range(10):
+        loops_1a.append("*")
+    return loops_1a
+
 
 
 
@@ -43,7 +55,11 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
+    loops_1c = []
+    for x in range(number_of_items):
+        loops_1c.append(symbol)
+    return loops_1c
+
 
 
 def loops_2():
@@ -64,7 +80,12 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    pass
+    loops_2a = []
+    loops_2 = []
+    for x in range(10):
+        loops_2a.append("*")
+        loops_2.append(loops_2a)
+    return loops_2
 
 
 def loops_3():
@@ -88,7 +109,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+
+    loops_3 = []
+    for x in range(10):
+        loops_3a = []
+        for y in range(10):
+            loops_3a.append(str(x))
+        loops_3.append(loops_3a)
+    return loops_3
 
 
 def loops_4():
@@ -108,7 +136,12 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
+    loops_4 = []
+    loops_4a = []
+    for x in range(10):
+        loops_4a.append(str(x))
+        loops_4.append(loops_4a)
+    return loops_4
 
 
 def loops_5():
@@ -133,7 +166,14 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
+
+    column = []
+    for y in range(10):
+        row = []
+        for x in range(5):
+            row.append('(i' + str(y) + ', j' + str(x) + ')')
+        column.append(row)
+    return column
 
 
 def loops_6():
@@ -156,7 +196,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    loops_6 = []
+    for y in range(11):
+        loops_6a = []
+        for x in range(y):
+            loops_6a.append(int(x))
+        loops_6.append(loops_6a)
+    return loops_6
+
 
 
 def loops_7():
@@ -180,7 +227,17 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+    loops_7 = []
+    for x in range(5):
+        loops_7a = []
+        for y in range(9):
+            if abs(y-4) <= x:
+                loops_7a.append("*")
+            else:
+                loops_7a.append(" ")
+        loops_7.append(loops_7a)
+    return loops_7
+
 
 
 def lp(some_kind_of_list, exercise_name):

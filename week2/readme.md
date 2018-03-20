@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+I managed to complete the exercises, but I am still unsure about how the pyramid loop works. I asked for some help, but was unable to understand completely how the provided code functions with the variables within to create the pyramid. I sort of understand, but again, not completely. I also do not understand why my lab book entry is continually classed as incomplete, and my wedge is not considered complete either.

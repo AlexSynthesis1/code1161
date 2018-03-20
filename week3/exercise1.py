@@ -12,7 +12,12 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    pass
+    count = 0
+    while (count < 9):
+        print('The count is') + str(count)
+        count = count + 1
+    else:
+        print("Good bye!")
 
 
 def lone_ranger(start, stop, step):

@@ -12,20 +12,24 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    count = 0
-    while (count < 9):
-        print('The count is') + str(count)
-        count = count + 1
-    else:
-        print("Good bye!")
-
+    test_1 = []
+    x = start
+    while x < stop:
+        test_1.append(x)
+        x += step
+    return test_1
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    pass
+    test_2 = []
+    x = start
+    while x < stop:
+        test_2.append(x)
+        x += step
+    return test_2
 
 
 def two_step_ranger(start, stop):
